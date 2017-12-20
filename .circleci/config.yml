@@ -65,7 +65,7 @@ jobs:
             - run:
                 name: Deploy to Firebase
                 commands:
-                    - |
+                    - >
                         if [ "${CIRCLE_BRANCH}" == "development" ]; then
                             firebase use development
                         elif [ "${CIRCLE_BRANCH}" == "staging" ]; then
