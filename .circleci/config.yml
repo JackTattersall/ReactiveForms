@@ -60,7 +60,7 @@ jobs:
             # Install Firebase cli
             - run:
                 name: Install Firebase cli
-                command: npm install -g firebase-tools
+                command: sudo npm install -g firebase-tools@3.13.1
             # Deploy to the firebase app corresponding to the current branch
             - run:
                 name: Resolve Deployment Branch
