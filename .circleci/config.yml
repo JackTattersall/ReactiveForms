@@ -43,6 +43,8 @@ jobs:
                 key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
                 paths:
                     - dist
+                    - .firebaserc
+                    - firebase.json
 
     deploy:
         working_directory: ~/my-project
