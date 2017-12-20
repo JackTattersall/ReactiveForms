@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "master": "lycettes-demo",
+    "staging": "lycettes-demo",
+    "development": "lycettes-demo"
+  }
+}
