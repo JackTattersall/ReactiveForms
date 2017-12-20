@@ -63,6 +63,9 @@ jobs:
                 command: sudo npm install -g firebase-tools@3.13.1
             # Deploy to the firebase app corresponding to the current branch
             - run:
+                name: Dir
+                command: ls
+            - run:
                 name: Resolve Deployment Branch
                 command: |
                     if [ "${CIRCLE_BRANCH}" == "development" ]; then
