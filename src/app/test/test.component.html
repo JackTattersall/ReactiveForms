@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="." (ngSubmit)="onSignIn(f)" #f="ngForm">
+        <div class="row">
+          <div class="col-sm-4 form-group">
+            <label for="email" class="control-label pull-left">Email</label>
+            <input type="email" class="form-control" id="email" name="email" ngModel>
+            <label for="password" class="control-label pull-left">Password</label>
+            <input type="password" class="form-control" id="password" name="password" ngModel>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary" (click)="fetchAllForms()">GO!</button>
